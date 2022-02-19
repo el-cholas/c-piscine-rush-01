@@ -10,11 +10,26 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+int		ft_args_to_int_array(char *str);
+void	ft_putstr(char *str);
+
+int main(int argc, char **argv)
+{
+	if (argc == 2)
+	{
+		ft_args_to_int_array(argv[1]);
+	}
+	else
+	{
+		ft_putstr("BOBO\n");
+	}
+}
+
+/*
 void	ft_putstr(char *str);
 int		*ft_args_to_int_array(char *str);
 int		*ft_rush_01(int *tab);
 void	ft_print_array(int *tab);
-
 int	main(int argc, char *argv[])
 {
 	int	*input;
@@ -30,3 +45,4 @@ int	main(int argc, char *argv[])
 	ft_print_array(result);
 	return (0);
 }
+*/

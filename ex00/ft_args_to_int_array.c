@@ -11,11 +11,47 @@
 /* ************************************************************************** */
 
 #include <stdlib.h>
+#include <stdio.h>
 
-int	*ft_args_to_int_array(char *str);
+void	ft_putstr(char *str);
+void	ft_putnum(char c);
+void	ft_putchar(char c);
 
-int	*ft_args_to_int_array(char *str)
+int	ft_args_to_int_array(char *str)
 {
+	int matrix[16];
+	int matrix_pointer;
+	int i;
+
+	matrix_pointer = 0;
+	i = 0;
+	while (matrix_pointer < 16)
+	{
+		if (str[i] >= '1' && (str[i] <= '4'))
+		{
+			matrix[matrix_pointer] = str[i];
+			matrix_pointer++;
+		}
+		else if (str[i] != ' ')
+		{
+			ft_putstr("Tu eres un bobo\n");
+			return (1);
+		}
+		i++;
+	}
+
+	i = 0;
+	while (i < 16)
+	{
+		if (i % 4 == 0)
+		{
+			ft_putchar('\n');
+		}
+		ft_putchar(matrix[i]);
+		ft_putchar(' ');
+		i++;
+	}
+	/*
 	int	i;
 	int	*tab;
 
@@ -26,5 +62,6 @@ int	*ft_args_to_int_array(char *str)
 		tab[i] = str[i * 2] - 0x30;
 		i++;
 	}
-	return (tab);
+	*/
+	return (0);
 }
