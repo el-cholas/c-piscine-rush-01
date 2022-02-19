@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include <stdio.h>
 
 void	ft_putstr(char *str);
 void	ft_putnum(char c);
@@ -25,21 +24,19 @@ int	ft_args_to_int_array(char *str)
 
 	matrix_pointer = 0;
 	i = 0;
-	while (matrix_pointer < 16)
+	while (str[i] != '\0')
 	{
 		if (str[i] >= '1' && (str[i] <= '4'))
 		{
 			matrix[matrix_pointer] = str[i];
 			matrix_pointer++;
 		}
-		else if (str[i] != ' ')
+		else if ((str[i] != ' ') || (i > 30))
 		{
-			ft_putstr("Tu eres un bobo\n");
 			return (1);
 		}
 		i++;
 	}
-
 	i = 0;
 	while (i < 16)
 	{
@@ -65,3 +62,5 @@ int	ft_args_to_int_array(char *str)
 	*/
 	return (0);
 }
+
+

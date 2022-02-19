@@ -12,17 +12,23 @@
 
 int		ft_args_to_int_array(char *str);
 void	ft_putstr(char *str);
+void	ft_putnum(char c);
 
 int main(int argc, char **argv)
 {
+	int error;
+
 	if (argc == 2)
 	{
-		ft_args_to_int_array(argv[1]);
+		error = ft_args_to_int_array(argv[1]);
 	}
 	else
 	{
-		ft_putstr("BOBO\n");
+		error = 1;
 	}
+
+	if (error)
+		ft_putstr("\nBOBO\n");
 }
 
 /*
