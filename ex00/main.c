@@ -6,11 +6,11 @@
 /*   By: xcarroll <xcarroll@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/19 11:12:27 by agarrigu          #+#    #+#             */
-/*   Updated: 2022/02/20 16:19:05 by agarrigu         ###   ########.fr       */
+/*   Updated: 2022/02/20 16:21:40 by agarrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		verify_input(char *str);
+int		verify_input(char *str, int grid_size);
 void	ft_putstr(char *str);
 
 int	main(int argc, char **argv)

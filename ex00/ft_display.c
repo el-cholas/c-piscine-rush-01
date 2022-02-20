@@ -6,7 +6,7 @@
 /*   By: agarrigu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/20 11:08:14 by agarrigu          #+#    #+#             */
-/*   Updated: 2022/02/20 11:12:07 by agarrigu         ###   ########.fr       */
+/*   Updated: 2022/02/20 16:33:43 by agarrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,23 @@ void	ft_putstr(char *str)
 	while (str[i] != '\0')
 	{
 		ft_putchar(str[i]);
+		i++;
+	}
+}
+
+void	print_matrix(int *matrix, int grid_size)
+{
+	int	i;
+
+	i = 0;
+	while (i < grid_size * grid_size)
+	{
+		if (i % grid_size == 0)
+		{
+			ft_putchar('\n');
+		}
+		ft_putchar(matrix[i]);
+		ft_putchar(' ');
 		i++;
 	}
 }
