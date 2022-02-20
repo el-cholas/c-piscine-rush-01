@@ -6,7 +6,7 @@
 /*   By: agarrigu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/19 14:47:04 by agarrigu          #+#    #+#             */
-/*   Updated: 2022/02/19 15:37:06 by agarrigu         ###   ########.fr       */
+/*   Updated: 2022/02/20 11:08:03 by agarrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,9 @@ void	ft_putchar(char c);
 
 int	ft_args_to_int_array(char *str)
 {
-	int matrix[16];
-	int matrix_pointer;
-	int i;
+	int	matrix[16];
+	int	matrix_pointer;
+	int	i;
 
 	matrix_pointer = 0;
 	i = 0;
@@ -62,5 +62,3 @@ int	ft_args_to_int_array(char *str)
 	*/
 	return (0);
 }
-
-
