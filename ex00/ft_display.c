@@ -20,7 +20,7 @@ void	ft_putchar(char c)
 void	ft_putnum(char c)
 {
 	c = c + '0';
-	write(1, &c, 1);
+	ft_putchar(c);
 }
 
 void	ft_putstr(char *str)

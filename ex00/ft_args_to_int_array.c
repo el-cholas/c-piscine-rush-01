@@ -13,6 +13,7 @@
 #include <stdlib.h>
 
 void	ft_putchar(char c);
+void	ft_putnum(char c);
 void	grid_controller();
 
 int	ft_args_to_int_array(char *str)
@@ -34,6 +35,7 @@ int	ft_args_to_int_array(char *str)
 			return (1);
 		i++;
 	}
+	ft_putnum(matrix_pointer);
 	if (i != 31)
 		return (1);
 	i = 0;
