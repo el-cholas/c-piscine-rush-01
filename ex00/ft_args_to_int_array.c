@@ -6,7 +6,7 @@
 /*   By: agarrigu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/19 14:47:04 by agarrigu          #+#    #+#             */
-/*   Updated: 2022/02/20 11:08:03 by agarrigu         ###   ########.fr       */
+/*   Updated: 2022/02/20 14:38:22 by luciamar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,12 +31,12 @@ int	ft_args_to_int_array(char *str)
 			matrix[matrix_pointer] = str[i];
 			matrix_pointer++;
 		}
-		else if ((str[i] != ' ') || (i > 30))
-		{
+		else if (str[i] != ' ')
 			return (1);
-		}
 		i++;
 	}
+	if (i != 31)
+		return (1);
 	i = 0;
 	while (i < 16)
 	{
