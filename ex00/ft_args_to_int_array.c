@@ -16,9 +16,9 @@ void	ft_putchar(char c);
 void	ft_putnum(char c);
 void	grid_controller();
 
-int	ft_args_to_int_array(char *str)
+int	ft_args_to_int_array(char *str, int grid_size)
 {
-	int	matrix[16];
+	int	matrix[grid_size * grid_size];
 	int	matrix_pointer;
 	int	i;
 
@@ -35,8 +35,7 @@ int	ft_args_to_int_array(char *str)
 			return (1);
 		i++;
 	}
-	ft_putnum(matrix_pointer);
-	if (i != 31)
+	if (i != grid_size * grid_size * 2 - 1)
 		return (1);
 	i = 0;
 	while (i < 16)
@@ -49,6 +48,7 @@ int	ft_args_to_int_array(char *str)
 		ft_putchar(' ');
 		i++;
 	}
+	grid_controller(grid_size);
 	/*
 	int	i;
 	int	*tab;

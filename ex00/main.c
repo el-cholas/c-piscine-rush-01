@@ -16,10 +16,12 @@ void	ft_putstr(char *str);
 int	main(int argc, char **argv)
 {
 	int	error;
+	int grid_size;
 
+	grid_size = 4;
 	if (argc == 2)
 	{
-		error = ft_args_to_int_array(argv[1]);
+		error = ft_args_to_int_array(argv[1], grid_size);
 	}
 	else
 	{
