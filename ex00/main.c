@@ -6,11 +6,11 @@
 /*   By: xcarroll <xcarroll@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/19 11:12:27 by agarrigu          #+#    #+#             */
-/*   Updated: 2022/02/20 15:58:11 by xcarroll         ###   ########.fr       */
+/*   Updated: 2022/02/20 16:19:05 by agarrigu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_args_to_int_array(char *str);
+int		verify_input(char *str);
 void	ft_putstr(char *str);
 
 int	main(int argc, char **argv)
@@ -21,7 +21,7 @@ int	main(int argc, char **argv)
 	grid_size = 4;
 	if (argc == 2)
 	{
-		error = ft_args_to_int_array(argv[1], grid_size);
+		error = verify_input(argv[1], grid_size);
 	}
 	else
 	{
