@@ -12,9 +12,8 @@
 
 #include <stdlib.h>
 
-void	ft_putstr(char *str);
-void	ft_putnum(char c);
 void	ft_putchar(char c);
+void	grid_controller();
 
 int	ft_args_to_int_array(char *str)
 {
