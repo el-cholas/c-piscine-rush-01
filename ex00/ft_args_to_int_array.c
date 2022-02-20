@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_args_to_int_array.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: agarrigu <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: xcarroll <xcarroll@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/19 14:47:04 by agarrigu          #+#    #+#             */
-/*   Updated: 2022/02/20 14:38:22 by luciamar         ###   ########.fr       */
+/*   Updated: 2022/02/20 16:00:31 by xcarroll         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,10 @@
 
 void	ft_putchar(char c);
 void	ft_putnum(char c);
-void	grid_controller();
+void	grid_controller(int grid_size);
 
-int	ft_args_to_int_array(char *str, int grid_size)
+/* Variable length array is forbidden, we need to use malloc */
+int	ft_args_to_int_array(int grid_size, char *str)
 {
 	int	matrix[grid_size * grid_size];
 	int	matrix_pointer;
@@ -49,7 +50,10 @@ int	ft_args_to_int_array(char *str, int grid_size)
 		i++;
 	}
 	grid_controller(grid_size);
-	/*
+	return (0);
+}
+
+/*
 	int	i;
 	int	*tab;
 
@@ -61,5 +65,3 @@ int	ft_args_to_int_array(char *str, int grid_size)
 		i++;
 	}
 	*/
-	return (0);
-}

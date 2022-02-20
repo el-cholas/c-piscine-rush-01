@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: agarrigu <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: xcarroll <xcarroll@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/19 11:12:27 by agarrigu          #+#    #+#             */
-/*   Updated: 2022/02/20 11:04:15 by agarrigu         ###   ########.fr       */
+/*   Updated: 2022/02/20 15:58:11 by xcarroll         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_putstr(char *str);
 int	main(int argc, char **argv)
 {
 	int	error;
-	int grid_size;
+	int	grid_size;
 
 	grid_size = 4;
 	if (argc == 2)
