@@ -43,7 +43,6 @@ int	verify_input(char *str, int grid_size)
 		return (1);
 	i = 0;
 	print_matrix(matrix, grid_size);
-	grid_controller(grid_size);
 	free(matrix);
 	return (0);
 }

@@ -14,7 +14,8 @@ int	calculate_grid_size(char *str)
 {
 	int	i;
 
-	while (i != '\0')
+	i = 0;
+	while (str[i] != '\0')
 	{
 		i++;
 	}

@@ -31,7 +31,7 @@ int	main(int argc, char *argv[])
 		error = 1;
 	}
 	if (error)
-		ft_putstr("\nBOBO\n");
+		ft_putstr("Error\n");
 	/* TODO: gotta free matrix eventually! */
 	matrix = get_matrix(argv[1], grid_size);
 }
